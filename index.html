@@ -138,7 +138,9 @@
 
         <div class="row">
             <div class="col-md-7">
-                <div class="chart넣자"> 후에 차트.js 배운 후 차트 추가
+                <div class="chart넣자">
+                    <canvas id="priceChart" width="400" height="300" aria-label="HELLo"></canvas>
+                    
                 </div>
                 <div class="card shadow">
                     <div class="card-body">
@@ -227,6 +229,30 @@
                         </li>
                     </ul>
                 </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <canvas id="sellAskPriceChart" class="w-100" height="200"></canvas>
+                        </div>
+                        <div class="col">
+
+                        </div>
+                        <div class="col">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            
+                        </div>
+                        <div class="col">
+
+                        </div>
+                        <div class="col">
+                            <canvas id="buyAskPriceChart" class="w-100" height="200"></canvas>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <footer class="">
@@ -237,12 +263,16 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
+    
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="priceChart.js"></script><script src="sellAskPriceChart.js"></script><script src="buyAskPriceChart.js"></script>
 </body>
 
 </html>
