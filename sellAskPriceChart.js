@@ -19,9 +19,13 @@ var sellAskPriceChart = new Chart(sapct, {
         legend:{display:false},
         scales: {
             xAxes: [{
+              ticks:{
+                reverse:true
+              },
               display: false
             }],
             yAxes: [{
+              
               display: false
             }],
           }
